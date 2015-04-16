@@ -1,0 +1,31 @@
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT loop.o -MD -MP -MF ".deps/loop.Tpo" -c -o loop.o loop.c; \
+then mv -f ".deps/loop.Tpo" ".deps/loop.Po"; else rm -f ".deps/loop.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT pbl.o -MD -MP -MF ".deps/pbl.Tpo" -c -o pbl.o pbl.c; \
+then mv -f ".deps/pbl.Tpo" ".deps/pbl.Po"; else rm -f ".deps/pbl.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT stack.o -MD -MP -MF ".deps/stack.Tpo" -c -o stack.o stack.c; \
+then mv -f ".deps/stack.Tpo" ".deps/stack.Po"; else rm -f ".deps/stack.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT support.o -MD -MP -MF ".deps/support.Tpo" -c -o support.o support.c; \
+then mv -f ".deps/support.Tpo" ".deps/support.Po"; else rm -f ".deps/support.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT inter.o -MD -MP -MF ".deps/inter.Tpo" -c -o inter.o inter.c; \
+then mv -f ".deps/inter.Tpo" ".deps/inter.Po"; else rm -f ".deps/inter.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT parse.o -MD -MP -MF ".deps/parse.Tpo" -c -o parse.o parse.c; \
+then mv -f ".deps/parse.Tpo" ".deps/parse.Po"; else rm -f ".deps/parse.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT procs.o -MD -MP -MF ".deps/procs.Tpo" -c -o procs.o procs.c; \
+then mv -f ".deps/procs.Tpo" ".deps/procs.Po"; else rm -f ".deps/procs.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT symtab.o -MD -MP -MF ".deps/symtab.Tpo" -c -o symtab.o symtab.c; \
+then mv -f ".deps/symtab.Tpo" ".deps/symtab.Po"; else rm -f ".deps/symtab.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT cgi.o -MD -MP -MF ".deps/cgi.Tpo" -c -o cgi.o cgi.c; \
+then mv -f ".deps/cgi.Tpo" ".deps/cgi.Po"; else rm -f ".deps/cgi.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT pbldbg.o -MD -MP -MF ".deps/pbldbg.Tpo" -c -o pbldbg.o pbldbg.c; \
+then mv -f ".deps/pbldbg.Tpo" ".deps/pbldbg.Po"; else rm -f ".deps/pbldbg.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT io.o -MD -MP -MF ".deps/io.Tpo" -c -o io.o io.c; \
+then mv -f ".deps/io.Tpo" ".deps/io.Po"; else rm -f ".deps/io.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT pbl_dbi.o -MD -MP -MF ".deps/pbl_dbi.Tpo" -c -o pbl_dbi.o pbl_dbi.c; \
+then mv -f ".deps/pbl_dbi.Tpo" ".deps/pbl_dbi.Po"; else rm -f ".deps/pbl_dbi.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT pblconfig.o -MD -MP -MF ".deps/pblconfig.Tpo" -c -o pblconfig.o pblconfig.c; \
+then mv -f ".deps/pblconfig.Tpo" ".deps/pblconfig.Po"; else rm -f ".deps/pblconfig.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT log.o -MD -MP -MF ".deps/log.Tpo" -c -o log.o log.c; \
+then mv -f ".deps/log.Tpo" ".deps/log.Po"; else rm -f ".deps/log.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..     -g -O2 -MT loadcode.o -MD -MP -MF ".deps/loadcode.Tpo" -c -o loadcode.o loadcode.c; \
+then mv -f ".deps/loadcode.Tpo" ".deps/loadcode.Po"; else rm -f ".deps/loadcode.Tpo"; exit 1; fi
+gcc  -g -O2   -o pbl  loop.o pbl.o stack.o support.o inter.o parse.o procs.o symtab.o cgi.o pbldbg.o io.o pbl_dbi.o pblconfig.o log.o loadcode.o  

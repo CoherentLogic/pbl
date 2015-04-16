@@ -1,0 +1,4 @@
+String blah="I, Claudius, have seen fit to fucking kill you."
+print "goodbye"
+print $blah;
+

@@ -1,0 +1,5 @@
+mysql4: mysql4.so.1
+
+mysql4.so.1:
+	gcc -fPIC -c pr_mysql.c -I/opt/sfw/mysql/include -L/opt/sfw/mysql/lib/mysql -lmysqlclient
+	gcc -shared pr_mysql.o -o mysql4.so.1

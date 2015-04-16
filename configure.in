@@ -1,0 +1,6 @@
+AC_INIT
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(pbl,0.98)
+AC_PROG_CC
+AC_PROG_INSTALL
+AC_OUTPUT(Makefile src/Makefile)

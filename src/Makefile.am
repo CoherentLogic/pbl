@@ -1,0 +1,2 @@
+bin_PROGRAMS = pbl
+pbl_SOURCES = glob.h loop.c pbl.c stack.c support.c inter.c parse.c procs.c stack.h symtab.c cgi.c pbldbg.c inter.h parse.h procs.h support.h cgi.h io.c io.h pbl_dbi.c pbl_dbi.h pblconfig.c pblconfig.h log.c log.h loadcode.c loadcode.h
